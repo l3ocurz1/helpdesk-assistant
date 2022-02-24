@@ -1,6 +1,8 @@
-# Rasa Helpdesk Assistant Example
+# Rasa Chatbot for Customer Care 
 
-This is a Rasa chatbot example demonstrating how to build an AI assistant for an IT Helpdesk. It includes an integration with the Service Now API to open incident reports and check on incident report statuses. Below is an example conversation, showing the bot helping a user open a support ticket and query its status. You can use this chatbot as a starting point for building customer service assistants or as a template for collecting required pieces of information from a user before making an API call.
+Questo chatbot è un'esempio di chatbot per l'assistenza clienti. Include al suo interno, sia modelli di AI sviluppati sul framework open-source rasa, sia un widget per pagine web che permette di utilizzare il rasa chatbot in qualsiasi sito web aziendale. Il chatbot sviluppato permette all' utente di inserire ticket di assistenza clienti e  di chiederne lo stato di avanzamento della richiesta di assistenza. Il chatbot è collegato ad un database relazione sql che ne permette la persistenza dei dati.
+Si puo utilizzare questo chatbot come punto di partenza per creare assistenti per il servizio clienti più strutturati e su misura della propria azienda.
+
 
 Here is an example of a conversation you can have with this bot:
 
@@ -14,7 +16,6 @@ Here is an example of a conversation you can have with this bot:
 - [Rasa Helpdesk Assistant Example](#rasa-helpdesk-assistant-example)
   - [Setup](#setup)
     - [Install the dependencies](#install-the-dependencies)
-    - [Optional: Connect to a ServiceNow instance](#optional-connect-to-a-servicenow-instance)
   - [Running the bot](#running-the-bot)
   - [Things you can ask the bot](#things-you-can-ask-the-bot)
   - [Example conversations](#example-conversations)

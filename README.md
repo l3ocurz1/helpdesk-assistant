@@ -15,7 +15,7 @@ Un esempio di conversazione con il bot:
 
 - [Rasa Helpdesk Assistant Example](#rasa-helpdesk-assistant-example)
   - [Installazione](#setup)
-    - [Installazione dipendenze](#install-the-dependencies)
+    - [Installazione dipendenze](#installazione)
   - [Running the bot](#running-the-bot)
   - [Cosa puoi chiedere al bot](#things-you-can-ask-the-bot)
   - [Esempio di conversazione](#example-conversations)
@@ -30,7 +30,7 @@ Un esempio di conversazione con il bot:
 
 ## Setup
 
-### Install the dependencies
+### Installazione
 
 In a Python3 virtual environment run:
 
@@ -52,28 +52,31 @@ pre-commit install
 
 Usa `rasa train` per addestrare il modello, una volta modificati i dati.
 
-Apri un'altra terminale, entra nel virtual enviroment, per eseguire il server di azioni personalizzate:
+```bash
+rasa train
+```
+
+Apri un'altra finestra , entra nel virtual enviroment, per eseguire il server di azioni personalizzate:
 
 ```bash
 rasa run actions
 ```
 
-In un'altra finestra ancora , run il  duckling server (per l'estrazione dientità):
+In un'altra finestra di terminale ancora , runna il  duckling server (per l'estrazione dientità):
 
 ```bash
 docker run -p 8000:8000 rasa/duckling
 ```
 
-Se vuoi parlare con il robot da terminale, run:
+Se vuoi parlare con il robot da terminale, digita:
 
 ```bash
-rasa shell --debug
+rasa shell 
 ```
 
-Note that `--debug` mode will produce a lot of output meant to help you understand how the bot is working
-under the hood. You can also add this flag to the action server command. To simply talk to the bot, you can remove this flag.
+Puoi utilizzare il flag  `--debug` per capire meglio come funziona il tutto. 
 
-Se vuoi utilizzare il widget per pagine web, apri in un'altra finestra dell'ambiente di sviluppo la directory "Webchat-Widget". 
+Se vuoi utilizzare il widget per pagine web, apri in un'altra finestra dell'ambiente di sviluppo, la directory "Webchat-Widget". 
 In seguito invia il tutto al  http/:localhost:5005. Con i seguenti comandi:
 
 ```bash
